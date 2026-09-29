@@ -1,8 +1,9 @@
+
 # Akash Sharma — Portfolio
 
 A full-screen, interactive portfolio hero built with React, TypeScript, Vite, and Tailwind CSS. Features a mouse-scrubbed background video, a typewriter intro, and a minimal creative-agency aesthetic.
 
-![Portfolio Preview](./public/preview.png)
+<img width="1469" height="834" alt="Screenshot 2026-09-30 at 1 15 18 AM" src="https://github.com/user-attachments/assets/44ed287b-89b0-416b-bd94-839379bf021b" />
 
 ---
 
