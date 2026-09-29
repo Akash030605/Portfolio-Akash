@@ -11,6 +11,14 @@ function legoHeroAssetFallbackPlugin() {
     configureServer(server: {middlewares: {use: (fn: (req: {url?: string}, res: {setHeader: (k: string, v: string) => void; end: (b: string) => void}, next: () => void) => void) => void}}) {
       server.middlewares.use((req, res, next) => {
         const cleanUrl = req.url?.split('?')[0];
+        if (cleanUrl === '/favicon.ico') {
+          const logoPath = path.resolve(__dirname, 'src/assets/LOGGO.png');
+          if (fs.existsSync(logoPath)) {
+            res.setHeader('Content-Type', 'image/png');
+            res.end(fs.readFileSync(logoPath) as unknown as string);
+            return;
+          }
+        }
         if (cleanUrl === '/assets/akash-hero.png' || cleanUrl === '/assets/akash-hero-reveal.png') {
           const publicFile = path.resolve(__dirname, 'public', cleanUrl.slice(1));
           if (fs.existsSync(publicFile)) {
