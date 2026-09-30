@@ -102,8 +102,8 @@ const PROJECTS_DATA: ProjectItem[] = [
       'Computer Vision',
       'Tailwind CSS',
     ],
-    ctaLabel: 'View Project',
-    link: 'https://github.com',
+    ctaLabel: 'Live Project',
+    link: 'https://fridgeos-sable.vercel.app/',
     architectureSummary:
       'Built with a cinematic dark glassmorphic interface, a persistent ambient video stage, client-side HTML5 canvas image compression, and a strict two-pass forensic computer-vision pipeline (/api/analyze, /api/recipes, /api/search-recipes) that eliminates ingredient hallucinations.',
     highlights: [
