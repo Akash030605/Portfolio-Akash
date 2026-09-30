@@ -8,7 +8,7 @@ import {
   TECHNICAL_VISUAL_ASSETS,
 } from '../assets/legoAkashAssets';
 
-// Local project screenshots from src/assets/asha and src/assets/conq
+// Local project screenshots from src/assets/asha, src/assets/conq, and src/assets/fridgeos
 import asha1Img from '../assets/asha/asha1.png';
 import asha2Img from '../assets/asha/asha2.png';
 import asha3Img from '../assets/asha/asha3.png';
@@ -16,6 +16,10 @@ import asha3Img from '../assets/asha/asha3.png';
 import conq1Img from '../assets/conq/conq1.png';
 import conq2Img from '../assets/conq/conq2.png';
 import conq3Img from '../assets/conq/conq3.png';
+
+import fridgeos1Img from '../assets/fridgeos/fridgeos1.png';
+import fridgeos2Img from '../assets/fridgeos/fridgeos2.png';
+import fridgeos3Img from '../assets/fridgeos/fridgeos3.png';
 
 const PROJECTS_DATA: ProjectItem[] = [
   {
@@ -81,6 +85,46 @@ const PROJECTS_DATA: ProjectItem[] = [
         'ConquerHire job discovery and candidate matching dashboard',
         'ConquerHire application workflow and hiring pipeline view',
         'ConquerHire primary landing and recruitment platform interface',
+      ],
+    },
+  },
+  {
+    id: 'fridgeos',
+    number: '03',
+    title: 'FridgeOS',
+    category: 'Full-Stack AI · Kitchen Intelligence',
+    description:
+      'A full-stack kitchen intelligence web application that turns a photo of an open refrigerator into tailored step-by-step recipes, nutritional breakdowns, and a persistent shopping list in seconds.',
+    technologies: [
+      'React',
+      'TypeScript',
+      'Node.js',
+      'Computer Vision',
+      'Tailwind CSS',
+    ],
+    ctaLabel: 'View Project',
+    link: 'https://github.com',
+    architectureSummary:
+      'Built with a cinematic dark glassmorphic interface, a persistent ambient video stage, client-side HTML5 canvas image compression, and a strict two-pass forensic computer-vision pipeline (/api/analyze, /api/recipes, /api/search-recipes) that eliminates ingredient hallucinations.',
+    highlights: [
+      'Two-Pass Forensic Fridge Scanner: 6-zone shelf inspection followed by self-verification fact-checking and canonical deduplication',
+      'Client-Side Canvas Optimization: Downscales multi-megabyte camera photos (>800KB) to ~200KB (max 1600px at 0.85 JPEG) prior to upload',
+      'Tailored Recipe Synthesis & Universal Search: Instant local recipe filtering with 400ms debounced fallback to global recipe discovery',
+      'Interactive Ingredient Editor, Per-Serving Macro Breakdown, Printable Recipe Sheet (@media print), and Persistent Shopping List',
+    ],
+    images: {
+      topLeft: fridgeos2Img,
+      bottomLeft: fridgeos3Img,
+      tallRight: fridgeos1Img,
+      fallbacks: [
+        TECHNICAL_VISUAL_ASSETS.beyondMeSpring,
+        TECHNICAL_VISUAL_ASSETS.beyondMeSecurity,
+        GENERATED_PROJECT_IMAGES.beyondMeMain,
+      ],
+      alts: [
+        'FridgeOS interactive ingredient scanner and verification chips',
+        'FridgeOS tailored recipe cards, nutrition macros, and shopping list',
+        'FridgeOS cinematic dark glassmorphic hero and kitchen intelligence workspace',
       ],
     },
   },

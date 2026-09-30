@@ -5,11 +5,13 @@ import {
   TECHNICAL_VISUAL_ASSETS,
 } from '../assets/legoAkashAssets';
 
-// Row 1 local assets (src/assets/row1)
+// Row 1 local assets (src/assets/row1 & src/assets/fridgeos)
 import truthwingsImg from '../assets/row1/truthwings.png';
 import conquerhireImg from '../assets/row1/conquerhire.10.21\u202fPM.png';
 import vitaltwinImg from '../assets/row1/Vitaltwin.png';
 import ashaboutiqueImg from '../assets/row1/ashaboutique.png';
+import fridgeos1Img from '../assets/fridgeos/fridgeos1.png';
+import fridgeos2Img from '../assets/fridgeos/fridgeos2.png';
 
 // Row 2 local assets (src/assets/row2)
 import awsImg from '../assets/row2/aws.png';
@@ -26,13 +28,21 @@ interface MarqueeAsset {
 }
 
 /**
- * ROW 1 — Drawn directly from resume (linked to src/assets/row1):
+ * ROW 1 — Drawn directly from resume & featured projects:
+ * - FridgeOS (fridgeos1.png)
  * - TruthWings EdTech (truthwings.png)
  * - ConquerHire (conquerhire.10.21 PM.png)
  * - VitalTwin (Vitaltwin.png)
  * - Asha Boutique (ashaboutique.png)
  */
 const ROW_ONE_ASSETS: MarqueeAsset[] = [
+  {
+    src: fridgeos1Img,
+    fallbackSrc: GENERATED_PROJECT_IMAGES.beyondMeMain,
+    alt: 'FridgeOS full-stack kitchen intelligence and computer-vision platform',
+    label: 'FridgeOS — Kitchen Intelligence',
+    meta: 'React · TypeScript · Computer Vision · REST APIs',
+  },
   {
     src: truthwingsImg,
     fallbackSrc: GENERATED_PROJECT_IMAGES.followupMain,
@@ -64,13 +74,21 @@ const ROW_ONE_ASSETS: MarqueeAsset[] = [
 ];
 
 /**
- * ROW 2 — Resume-backed systems, cloud, security & data work (linked to src/assets/row2):
+ * ROW 2 — Resume-backed systems, cloud, security & data work:
+ * - FridgeOS Forensic Scanner & Recipes (fridgeos2.png)
  * - AWS Cloud Infrastructure (aws.png)
  * - Spring Boot Security (Spring-Boot.png)
  * - Data Modeling & Storage (mongo.gif)
  * - Socket.IO Realtime Chat (so.png)
  */
 const ROW_TWO_ASSETS: MarqueeAsset[] = [
+  {
+    src: fridgeos2Img,
+    fallbackSrc: TECHNICAL_VISUAL_ASSETS.beyondMeSpring,
+    alt: 'FridgeOS two-pass forensic ingredient scanner and recipe synthesis',
+    label: 'FridgeOS Forensic Vision Pipeline',
+    meta: 'Two-Pass AI Scan · Canvas Optimization · Nutrition',
+  },
   {
     src: awsImg,
     fallbackSrc: TECHNICAL_VISUAL_ASSETS.ashaCloud,
